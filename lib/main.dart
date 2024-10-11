@@ -13,12 +13,12 @@ class PokemonApp extends StatelessWidget {
         primaryColor: Colors.white,
         scaffoldBackgroundColor: Colors.white, colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.red),
       ),
-      home: HomeScreen(),
+      home: TelaHome(),
     );
   }
 }
 
-class HomeScreen extends StatelessWidget {
+class TelaHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => SettingsScreen()),
+                MaterialPageRoute(builder: (context) => TelaSettings()),
               );
             },
           ),
@@ -55,7 +55,7 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => PokedexScreen()),
+                  MaterialPageRoute(builder: (context) => Pokedex()),
                 );
               },
             ),
@@ -75,7 +75,7 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-class PokedexScreen extends StatelessWidget {
+class Pokedex extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -114,7 +114,7 @@ class TelaItems extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          'Itens Coletados',
+          'Itens coletados',
           style: TextStyle(fontSize: 20, color: Colors.black),
         ),
       ),
@@ -134,7 +134,7 @@ class TelaItems extends StatelessWidget {
   }
 }
 
-class SettingsScreen extends StatelessWidget {
+class TelaSettings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final TextEditingController _usernameController = TextEditingController();
@@ -175,7 +175,7 @@ class SettingsScreen extends StatelessWidget {
               onPressed: () {
                 // Tem que dar continuidade aqui tambem ksksksks 
               },
-              child: Text('Salvar Configurações'),
+              child: Text('Salvar configurações'),
             ),
           ],
         ),
