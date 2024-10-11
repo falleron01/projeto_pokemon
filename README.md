@@ -23,8 +23,3 @@ O propósito deste aplicativo é permitir que jogadores de jogos Pokémon tenham
 2. **Pokédex**: Exibe os Pokémon capturados com a opção de adicionar novos.
 3. **Itens**: Exibe os itens adquiridos e permite adicionar novos.
 4. **Configurações**: Preparada para futuras implementações de login.
-
-## 🚀 Como Rodar o Projeto
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
